@@ -87,7 +87,6 @@ def update_todo():
 
     index = todos["todos"].index(old_todo)
     todos["todos"][index] = new_todo
-    
 
     return jsonify({"message": f"TODO actualizado de '{old_todo}' a '{new_todo}'"}), 200
 
